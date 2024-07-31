@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>حاسبة الوديعة</h1>
+        <form id="depositForm">
+            <label for="principal">المبلغ المودع (جنيه):</label>
+            <input type="number" id="principal" name="principal" required>
+            
+            <label for="annualRate">معدل الفائدة السنوي (%):</label>
+            <input type="number" id="annualRate" name="annualRate" step="0.01" required>
+            
+            <label for="months">مدة الإيداع (شهور):</label>
+            <input type="number" id="months" name="months" required>
+            
+            <button type="button" onclick="calculateDeposit()">احسب</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+    
